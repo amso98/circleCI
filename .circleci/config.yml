@@ -5,8 +5,9 @@ jobs:
       - image: circleci/node
      steps:
       - run:
-          docker version
-          echo "Hola darvein"
+         command: 
+           docker version
+           echo "Hola darvein"
 workflows:
     version:
     Hello_DARVIEN:
