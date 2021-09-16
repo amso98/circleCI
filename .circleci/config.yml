@@ -4,10 +4,13 @@ jobs:
      docker:
       - image: circleci/node
      steps:
+      - setup_remote_docker
       - run:
         command: |         
-          docker version
+          docker images
           echo "Hola darvein"
+          echo "foobar"
+
 workflows:
     version:
     Hello_DARVIEN:
