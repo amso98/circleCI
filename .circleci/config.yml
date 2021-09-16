@@ -5,10 +5,12 @@ jobs:
       - image: circleci/node
      steps:
       - setup_remote_docker:
+          docker_layer_caching: true
       - run:
           command:
             docker images
             echo "Hola darvein"
+            echo "foobaar"
 workflows:
     version:
     Hello_DARVIEN:
