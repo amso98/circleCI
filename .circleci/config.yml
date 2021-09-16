@@ -1,9 +1,14 @@
 version: 2.1
 jobs:
     test:
-     - docker version
-     - echo Hola daverin
+     docker:
+      - image: circleci/node
+     steps:
+      - run:
+          docker version
+          echo "Hola darvein"
 workflows:
-    "Hello DARVIEN":
-        jobs:
-          - test
+ version:2.1
+Hello_DARVIEN:
+    jobs:
+     - test
