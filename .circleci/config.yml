@@ -8,7 +8,7 @@ jobs:
           docker version
           echo "Hola darvein"
 workflows:
-    version: 2.1
+    version:
     Hello_DARVIEN:
         jobs:
             - test
