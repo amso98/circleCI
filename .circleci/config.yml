@@ -6,8 +6,8 @@ jobs:
      steps:
       - run:
          command: 
-           docker version
            echo "Hola darvein"
+           echo "foobar"
 workflows:
     version:
     Hello_DARVIEN:
